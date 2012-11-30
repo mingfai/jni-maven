@@ -13,6 +13,6 @@ public class App {
 
         long before = System.nanoTime();
         for (int i=0; i < 1000000; i++ ) t.hello();
-        System.out.println("called 1M times, elapsed " + (System.nanoTime()-before)/1000/1000 + "ms");//"µs
+        System.out.println("called 1M times, elapsed " + (System.nanoTime()-before)/1000 + "µs");
 	}
 }
