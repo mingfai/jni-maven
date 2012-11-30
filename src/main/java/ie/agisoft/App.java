@@ -7,11 +7,10 @@ package ie.agisoft;
 public class App {
 
 	public static void main(String[] args) {
-        System.nanoTime();
 		System.out.println("Hello World!");
         Test t = new Test();
-        long before = System.currentTimeMillis();
+        long before = System.nanoTime();
 		t.hello();
-        System.out.println("elapsed " + (System.currentTimeMillis()-before));
+        System.out.println("elapsed " + (System.nanoTime()-before));
 	}
 }
